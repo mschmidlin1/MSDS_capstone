@@ -1,5 +1,5 @@
 
-from configs import PAPER_API_ID, PAPER_SECRET_KEY
+from my_secrets import PAPER_API_ID, PAPER_SECRET_KEY
 
 from alpaca.trading.client import TradingClient
 

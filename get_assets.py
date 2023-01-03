@@ -1,5 +1,5 @@
-from configs import PAPER_API_ID, PAPER_SECRET_KEY, TICKERS
-
+from my_secrets import PAPER_API_ID, PAPER_SECRET_KEY
+from configs import TICKERS
 from alpaca.trading.client import TradingClient
 from alpaca.trading.requests import GetAssetsRequest
 from alpaca.trading.enums import AssetClass

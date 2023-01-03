@@ -1,0 +1,6 @@
+ALPACA_API_BASE_URL = "https://paper-api.alpaca.markets"
+
+PAPER_API_ID = "PK92A2VGKAAR9WB08JLW"
+PAPER_SECRET_KEY = "xjsGTIqTaQpkWKBBNGjvIiRi5Mk75W0opie4gXWU"
+
+POLYGON_API_KEY = "Mzpyq1_bHx3OdCqIpKnT541M2uaOoIxU"
