@@ -1,4 +1,5 @@
 
+TIMEZONE="US/Eastern"
 ALPCA_API_BASE_URL = "https://paper-api.alpaca.markets"
 TICKERS = {
     "APPLE_TICKER": "AAPL",

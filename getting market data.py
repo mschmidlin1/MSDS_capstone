@@ -12,7 +12,7 @@ import pandas as pd
 
 tickers_list = list(TICKERS.values())
 
-tickers_list = ["SPY"]
+# tickers_list = ["SPY"]
 
 
 
