@@ -7,13 +7,15 @@ tickers_list = list(TICKERS.values())
 trading_client = TradingClient(PAPER_API_ID, PAPER_SECRET_KEY)
 
 # search for crypto assets
-search_params = GetAssetsRequest()
+search_params = GetAssetsRequest(asset_class='crypto') #us_equity
 
 assets = trading_client.get_all_assets(search_params)
 
-asset_tickers = {asset.name: asset.symbol for asset in assets}
+asset_tickers = {asset.symbol: asset.name for asset in assets}
 
-print(len(asset_tickers))
+print(asset_tickers)
 
-for tick in tickers_list:
-    print(tick, tick in asset_tickers.values())
+# print(len(asset_tickers))
+
+# for tick in tickers_list:
+#     print(tick, tick in asset_tickers.values())

@@ -1,0 +1,5 @@
+2023-01-22 20:14:58,469 - DEBUG - Starting new HTTPS connection (1): paper-api.alpaca.markets:443
+2023-01-22 20:14:58,789 - DEBUG - https://paper-api.alpaca.markets:443 "GET /v2/clock HTTP/1.1" 200 148
+2023-01-22 20:14:58,887 - DEBUG - https://paper-api.alpaca.markets:443 "GET /v2/clock HTTP/1.1" 200 148
+2023-01-22 20:14:58,887 - INFO - Next market open is: 2023-01-23 09:30:00-05:00
+2023-01-22 20:14:58,888 - INFO - Sleeping for 13:15:01.209969.

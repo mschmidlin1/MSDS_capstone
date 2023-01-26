@@ -26,5 +26,7 @@ market_order = trading_client.submit_order(market_order_data)
 # for property_name, value in market_order:
 #     print(f"\"{property_name}\": {value}")
 import time
+
+
 time.sleep(10)
 print(f"Buying power after trade: {float(account.buying_power):,}")
