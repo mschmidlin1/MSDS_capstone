@@ -1,3 +1,5 @@
+
+![GitHub repo size](https://img.shields.io/github/repo-size/mschmidlin1/MSDS_capstone?style=plastic)
 # Python Tradebot using alpaca-py
 
 A trade bot that trades stocks based on different trading algorithms. This was created by myself (Michael Schmidlin) as a capstone project for a Masters in Data Science from University of Denver.
