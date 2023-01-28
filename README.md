@@ -14,11 +14,11 @@ A trade bot that trades stocks based on different trading algorithms. This was c
 
 
 ## How to use
-1.) Clone the repo.
-2.) run `pip install -r requirements.txt`
-3.) specify other arguments.
-Other arguments:
-`arg1` - does this thing
+1.) Clone the repo.<br>
+2.) run `pip install -r requirements.txt`<br>
+3.) specify other arguments.<br>
+Other arguments:<br>
+`arg1` - does this thing<br>
 
 
 Also if your project will require authentication like passwords or usernames, this is a good section to include the credentials.
