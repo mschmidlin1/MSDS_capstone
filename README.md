@@ -1,7 +1,7 @@
 
 
 
-[![Python 3.8.8 badge](file:badges/tmp98cqyhoe.svg)]
+![Python 3.8.8 badge](file:./badges/tmp98cqyhoe.svg)
 ![PyPI](https://img.shields.io/pypi/v/torch?color=green&label=torch)
 ![PyPI](https://img.shields.io/pypi/v/alpaca-py?color=green&label=alpaca-py)
 ![GitHub repo size](https://img.shields.io/github/repo-size/mschmidlin1/MSDS_capstone?style=plastic)
