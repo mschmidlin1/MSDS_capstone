@@ -5,7 +5,7 @@
 ![GitHub repo size](https://img.shields.io/github/repo-size/mschmidlin1/MSDS_capstone?style=plastic)
 
 
-![alt text]([http://url/to/img.png](https://m.foolcdn.com/media/dubs/original_images/Intro_slide_-_digital_stock_chart_going_up_-_source_getty.jpg))
+![alt text](https://m.foolcdn.com/media/dubs/original_images/Intro_slide_-_digital_stock_chart_going_up_-_source_getty.jpg)
 
 
 # Python Tradebot using alpaca-py
