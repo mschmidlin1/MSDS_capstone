@@ -45,3 +45,10 @@
 2023-02-05 21:25:29,486 - DEBUG - https://paper-api.alpaca.markets:443 "POST /v2/orders HTTP/1.1" 403 138
 2023-02-05 21:33:21,332 - DEBUG - Resetting dropped connection: paper-api.alpaca.markets
 2023-02-05 21:33:21,507 - DEBUG - https://paper-api.alpaca.markets:443 "POST /v2/orders HTTP/1.1" 403 137
+2023-02-05 21:50:37,757 - DEBUG - Starting new HTTPS connection (1): data.alpaca.markets:443
+2023-02-05 21:50:37,930 - DEBUG - https://data.alpaca.markets:443 "GET /v1beta2/crypto/latest/quotes?symbols=BTC%2FUSD HTTP/1.1" 200 116
+2023-02-05 21:50:51,253 - DEBUG - Resetting dropped connection: paper-api.alpaca.markets
+2023-02-05 21:50:51,453 - DEBUG - https://paper-api.alpaca.markets:443 "GET /v2/account HTTP/1.1" 200 None
+2023-02-05 21:50:51,453 - INFO - Buying 10000 dollars of BTC/USD.
+2023-02-05 21:50:51,490 - DEBUG - https://paper-api.alpaca.markets:443 "POST /v2/orders HTTP/1.1" 200 794
+2023-02-05 21:50:51,528 - DEBUG - https://paper-api.alpaca.markets:443 "GET /v2/account HTTP/1.1" 200 None
