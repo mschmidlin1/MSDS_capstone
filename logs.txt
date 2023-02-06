@@ -3,3 +3,45 @@
 2023-01-22 20:14:58,887 - DEBUG - https://paper-api.alpaca.markets:443 "GET /v2/clock HTTP/1.1" 200 148
 2023-01-22 20:14:58,887 - INFO - Next market open is: 2023-01-23 09:30:00-05:00
 2023-01-22 20:14:58,888 - INFO - Sleeping for 13:15:01.209969.
+2023-02-05 20:51:23,267 - DEBUG - Instance of Trader() class created.
+2023-02-05 20:51:23,267 - DEBUG - Instace of Stock_Trader() class created.
+2023-02-05 20:51:23,273 - DEBUG - Starting new HTTPS connection (1): paper-api.alpaca.markets:443
+2023-02-05 20:51:23,915 - DEBUG - https://paper-api.alpaca.markets:443 "GET /v2/assets?asset_class=us_equity HTTP/1.1" 200 None
+2023-02-05 20:59:17,407 - DEBUG - Resetting dropped connection: paper-api.alpaca.markets
+2023-02-05 20:59:17,908 - DEBUG - https://paper-api.alpaca.markets:443 "GET /v2/account HTTP/1.1" 200 982
+2023-02-05 21:00:04,131 - DEBUG - https://paper-api.alpaca.markets:443 "GET /v2/account HTTP/1.1" 200 982
+2023-02-05 21:03:08,875 - DEBUG - Resetting dropped connection: paper-api.alpaca.markets
+2023-02-05 21:03:09,027 - DEBUG - https://paper-api.alpaca.markets:443 "GET /v2/positions HTTP/1.1" 200 None
+2023-02-05 21:03:27,971 - DEBUG - https://paper-api.alpaca.markets:443 "GET /v2/positions HTTP/1.1" 200 None
+2023-02-05 21:03:47,202 - DEBUG - https://paper-api.alpaca.markets:443 "GET /v2/positions HTTP/1.1" 200 None
+2023-02-05 21:16:35,019 - DEBUG - Resetting dropped connection: paper-api.alpaca.markets
+2023-02-05 21:16:35,583 - DEBUG - https://paper-api.alpaca.markets:443 "GET /v2/account HTTP/1.1" 200 982
+2023-02-05 21:16:35,994 - DEBUG - https://paper-api.alpaca.markets:443 "GET /v2/positions HTTP/1.1" 200 None
+2023-02-05 21:17:26,958 - DEBUG - https://paper-api.alpaca.markets:443 "DELETE /v2/positions?cancel_orders=True HTTP/1.1" 207 1670
+2023-02-05 21:17:46,549 - DEBUG - https://paper-api.alpaca.markets:443 "GET /v2/account HTTP/1.1" 200 None
+2023-02-05 21:17:46,583 - DEBUG - https://paper-api.alpaca.markets:443 "GET /v2/positions HTTP/1.1" 200 493
+2023-02-05 21:19:58,022 - DEBUG - Instance of Trader() class created.
+2023-02-05 21:19:58,023 - DEBUG - Instace of Crypto_Trader() class created.
+2023-02-05 21:19:58,024 - DEBUG - Starting new HTTPS connection (1): paper-api.alpaca.markets:443
+2023-02-05 21:19:58,272 - DEBUG - https://paper-api.alpaca.markets:443 "GET /v2/assets?asset_class=crypto HTTP/1.1" 200 None
+2023-02-05 21:20:16,240 - DEBUG - Instance of Trader() class created.
+2023-02-05 21:20:16,240 - DEBUG - Instace of Crypto_Trader() class created.
+2023-02-05 21:20:16,241 - DEBUG - Starting new HTTPS connection (1): paper-api.alpaca.markets:443
+2023-02-05 21:20:16,343 - DEBUG - https://paper-api.alpaca.markets:443 "GET /v2/assets?asset_class=crypto HTTP/1.1" 200 None
+2023-02-05 21:20:36,238 - DEBUG - https://paper-api.alpaca.markets:443 "GET /v2/account HTTP/1.1" 200 None
+2023-02-05 21:21:50,944 - DEBUG - https://paper-api.alpaca.markets:443 "GET /v2/assets?asset_class=crypto HTTP/1.1" 200 None
+2023-02-05 21:22:06,751 - DEBUG - https://paper-api.alpaca.markets:443 "GET /v2/assets?asset_class=crypto HTTP/1.1" 200 None
+2023-02-05 21:23:21,673 - DEBUG - Starting new HTTPS connection (1): data.alpaca.markets:443
+2023-02-05 21:23:21,967 - DEBUG - https://data.alpaca.markets:443 "GET /v1beta2/crypto/latest/quotes?symbols=BTC%2FUSDT HTTP/1.1" 200 114
+2023-02-05 21:24:02,488 - DEBUG - Starting new HTTPS connection (1): data.alpaca.markets:443
+2023-02-05 21:24:02,627 - DEBUG - https://data.alpaca.markets:443 "GET /v1beta2/crypto/latest/quotes?symbols=BTC%2FUSDT HTTP/1.1" 200 113
+2023-02-05 21:24:16,499 - DEBUG - Starting new HTTPS connection (1): data.alpaca.markets:443
+2023-02-05 21:24:16,612 - DEBUG - https://data.alpaca.markets:443 "GET /v1beta2/crypto/latest/quotes?symbols=BTC%2FUSDT HTTP/1.1" 200 118
+2023-02-05 21:24:30,249 - DEBUG - Starting new HTTPS connection (1): data.alpaca.markets:443
+2023-02-05 21:24:30,358 - DEBUG - https://data.alpaca.markets:443 "GET /v1beta2/crypto/latest/quotes?symbols=BTC%2FUSDT HTTP/1.1" 200 114
+2023-02-05 21:25:29,277 - DEBUG - Resetting dropped connection: paper-api.alpaca.markets
+2023-02-05 21:25:29,451 - DEBUG - https://paper-api.alpaca.markets:443 "GET /v2/account HTTP/1.1" 200 None
+2023-02-05 21:25:29,452 - INFO - Buying 10000 dollars of BTC/USDT.
+2023-02-05 21:25:29,486 - DEBUG - https://paper-api.alpaca.markets:443 "POST /v2/orders HTTP/1.1" 403 138
+2023-02-05 21:33:21,332 - DEBUG - Resetting dropped connection: paper-api.alpaca.markets
+2023-02-05 21:33:21,507 - DEBUG - https://paper-api.alpaca.markets:443 "POST /v2/orders HTTP/1.1" 403 137

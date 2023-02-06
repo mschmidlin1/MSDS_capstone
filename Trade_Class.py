@@ -36,7 +36,7 @@ class Trader():
     
     def get_buying_power(self):
         self.get_account()
-        self.buying_power = self.account.buying_power
+        self.buying_power = float(self.account.buying_power)
 
     def get_available_symbols(self):
         search_params = GetAssetsRequest(asset_class=self.asset_class)
@@ -46,11 +46,25 @@ class Trader():
     
     def get_ask_price(self, symbol):
         quote = self.get_quote(symbol)
-        return quote['ask_price']
+        return quote.ask_price
 
     def get_bid_price(self, symbol):
         quote = self.get_quote(symbol)
-        return quote['bid_price']
+        return quote.bid_price
+    
+    def get_all_positions(self, ):
+        self.get_account()
+        all_positions = self.trading_client.get_all_positions()
+        columns = list(all_positions[0].dict().keys())
+        positions_dict = {key: [] for key in columns}
+
+        for position in all_positions:
+            for key in columns:
+                positions_dict[key].append(position.dict()[key])
+        
+        self.positions_df = pd.DataFrame(positions_dict)
+        for col in self.positions_df.columns:
+            self.positions_df[col] = pd.to_numeric(self.positions_df[col], errors='ignore')
 
     def buy(self, symbol, quantity=None, price=None, side=OrderSide.BUY, time_in_force=TimeInForce.GTC):
         """Must choose either to buy a `quantity` or buy a specific amount in terms
@@ -88,6 +102,9 @@ class Trader():
         self.get_buying_power()
         return 0
 
+    def sell_all(self, cancel_orders=True):
+        self.trading_client.close_all_positions(cancel_orders=cancel_orders)
+
     def sell(self):
         pass
 
@@ -119,9 +136,6 @@ class Stock_Trader(Trader):
         bars = client.get_stock_bars(request_params)
         return bars.df
 
-
-
-
 class Crypto_Trader(Trader):
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)
@@ -132,7 +146,7 @@ class Crypto_Trader(Trader):
     def get_quote(self, symbol):
         client = CryptoHistoricalDataClient(self.API_ID, self.SECRET_KEY)
         multisymbol_request_params = CryptoLatestQuoteRequest(symbol_or_symbols=symbol)
-        return client.get_stock_latest_quote(multisymbol_request_params)[symbol]
+        return client.get_crypto_latest_quote(multisymbol_request_params)[symbol]
 
     def get_bars(self, symbol, start, end,time_resolution='day'):
         client = CryptoHistoricalDataClient()

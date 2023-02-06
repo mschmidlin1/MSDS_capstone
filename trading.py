@@ -1,3 +1,8 @@
+# import os
+
+# print(os.getcwd())
+# os.chdir(os.getcwd())
+
 
 from my_secrets import PAPER_API_ID, PAPER_SECRET_KEY
 
@@ -14,7 +19,7 @@ print(f"Buying power before trade: {float(account.buying_power):,}")
 
 
 market_order_data = MarketOrderRequest(
-                      symbol="AAPL",
+                      symbol="BTC/USD",
                       qty=1,
                       side=OrderSide.BUY,
                       time_in_force=TimeInForce.GTC
@@ -27,6 +32,6 @@ market_order = trading_client.submit_order(market_order_data)
 #     print(f"\"{property_name}\": {value}")
 import time
 
-
-time.sleep(10)
+account = trading_client.get_account()
+time.sleep(2)
 print(f"Buying power after trade: {float(account.buying_power):,}")
