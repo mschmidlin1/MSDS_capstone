@@ -1,8 +1,7 @@
-# import os
+import os
+import sys
 
-# print(os.getcwd())
-# os.chdir(os.getcwd())
-
+sys.path.append(os.getcwd())
 
 from my_secrets import PAPER_API_ID, PAPER_SECRET_KEY
 

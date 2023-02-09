@@ -1,6 +1,6 @@
 
 TIMEZONE="US/Eastern"
-LOG_FILE_NAME = "logs.txt"
+LOG_FILE_NAME = "logs/logs.txt"
 ALPCA_API_BASE_URL = "https://paper-api.alpaca.markets"
 TICKERS = {
     "APPLE_TICKER": "AAPL",

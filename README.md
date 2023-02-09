@@ -2,7 +2,6 @@
 ![stuff](badges/python%203.8.8%20badge.svg)
 ![PyPI](https://img.shields.io/pypi/v/torch?color=green&label=torch)
 ![PyPI](https://img.shields.io/pypi/v/alpaca-py?color=green&label=alpaca-py)
-![GitHub repo size](https://img.shields.io/github/repo-size/mschmidlin1/MSDS_capstone?style=plastic)
 
 
 ![alt text](https://m.foolcdn.com/media/dubs/original_images/Intro_slide_-_digital_stock_chart_going_up_-_source_getty.jpg)
