@@ -877,3 +877,12 @@
 2023-02-19 20:46:05,652 - DEBUG - Starting new HTTPS connection (1): data.alpaca.markets:443
 2023-02-19 20:46:05,889 - DEBUG - https://data.alpaca.markets:443 "GET /v2/stocks/AAPL/bars?start=2015-01-01T00%3A00%3A00Z&end=2023-02-01T00%3A00%3A00Z&timeframe=1Day HTTP/1.1" 200 None
 2023-02-19 20:46:05,975 - DEBUG - https://data.alpaca.markets:443 "GET /v2/stocks/AAPL/bars?start=2015-01-01T00%3A00%3A00Z&end=2023-02-01T00%3A00%3A00Z&timeframe=1Day&page_token=QUFQTHxEfDIwMTktMTEtMTlUMDU6MDA6MDAuMDAwMDAwMDAwWg%3D%3D HTTP/1.1" 200 None
+2023-02-20 19:57:28,102 - DEBUG - Instance of Trader() class created.
+2023-02-20 19:57:28,103 - DEBUG - Instace of Stock_Trader() class created.
+2023-02-20 19:57:28,108 - DEBUG - Starting new HTTPS connection (1): paper-api.alpaca.markets:443
+2023-02-20 19:57:28,419 - DEBUG - https://paper-api.alpaca.markets:443 "GET /v2/assets?asset_class=us_equity HTTP/1.1" 200 None
+2023-02-20 19:57:31,633 - DEBUG - https://paper-api.alpaca.markets:443 "GET /v2/clock HTTP/1.1" 200 148
+2023-02-20 19:57:31,677 - DEBUG - https://paper-api.alpaca.markets:443 "GET /v2/calendar HTTP/1.1" 200 None
+2023-02-20 19:57:32,595 - DEBUG - Starting new HTTPS connection (1): data.alpaca.markets:443
+2023-02-20 19:57:32,761 - DEBUG - https://data.alpaca.markets:443 "GET /v2/stocks/AAPL/bars?start=2015-01-01T00%3A00%3A00Z&end=2023-02-01T00%3A00%3A00Z&timeframe=1Day HTTP/1.1" 200 None
+2023-02-20 19:57:32,845 - DEBUG - https://data.alpaca.markets:443 "GET /v2/stocks/AAPL/bars?start=2015-01-01T00%3A00%3A00Z&end=2023-02-01T00%3A00%3A00Z&timeframe=1Day&page_token=QUFQTHxEfDIwMTktMTEtMTlUMDU6MDA6MDAuMDAwMDAwMDAwWg%3D%3D HTTP/1.1" 200 None
