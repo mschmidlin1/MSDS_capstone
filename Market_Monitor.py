@@ -27,9 +27,29 @@ class Market_Monitor():
     def get_trade_clock(self):
         self.trade_clock = self.trading_client.get_clock()
 
+    def get_trade_calendar(self):
+        self.trade_calendars = self.trading_client.get_calendar()
+        self.calendar_dict = {
+            'date': [],
+            'open': [],
+            'close': []
+        }
+
+        for calendar in self.trade_calendars:
+            self.calendar_dict['date'].append(calendar.date)
+            self.calendar_dict['close'].append(calendar.close)
+            self.calendar_dict['open'].append(calendar.open)
+
+    def trading_date(self, date: datetime.date):
+        """Check is the passed `date` is in the list of known trading dates.
+        
+        The trading dates covered are from 1970-2029."""
+        return date in self.calendar_dict['date']
+
     def update(self):
         self.current_tod()
         self.get_trade_clock()
+        self.get_trade_calendar()
         self.market_open = self.trade_clock.is_open
         self.next_open = self.trade_clock.next_open
         self.next_close = self.trade_clock.next_close
@@ -42,6 +62,11 @@ class Market_Monitor():
         return self.market_open
 
     def market_closed_loop(self, continuous=False, num_seconds=5):
+        """
+        The market closed loop will run until the market is open again. It will not hand the thread back to the main program until the market is open.
+
+        
+        """
         logging.info(f"Next market open is: {self.next_open}")
         logging.info(f"Sleeping for {self.time_until_open}.")
         time.sleep(self.time_until_open.total_seconds())

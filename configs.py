@@ -13,4 +13,5 @@ TICKERS = {
 import logging
 def set_logger():
     logging.basicConfig(filename=LOG_FILE_NAME, level=logging.DEBUG, format='%(asctime)s - %(levelname)s - %(message)s')
+    # logging.getLogger().addHandler(logging.StreamHandler())
 
