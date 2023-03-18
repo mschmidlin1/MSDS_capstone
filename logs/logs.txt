@@ -2355,3 +2355,12 @@
 2023-03-07 19:36:53,552 - DEBUG - Starting new HTTPS connection (1): data.alpaca.markets:443
 2023-03-07 19:36:53,751 - DEBUG - https://data.alpaca.markets:443 "GET /v2/stocks/AAPL/bars?start=2015-01-01T00%3A00%3A00Z&end=2023-02-01T00%3A00%3A00Z&timeframe=1Day HTTP/1.1" 200 None
 2023-03-07 19:36:53,840 - DEBUG - https://data.alpaca.markets:443 "GET /v2/stocks/AAPL/bars?start=2015-01-01T00%3A00%3A00Z&end=2023-02-01T00%3A00%3A00Z&timeframe=1Day&page_token=QUFQTHxEfDIwMTktMTEtMTlUMDU6MDA6MDAuMDAwMDAwMDAwWg%3D%3D HTTP/1.1" 200 None
+2023-03-12 22:55:55,724 - DEBUG - Running function test_func
+2023-03-12 22:56:35,527 - DEBUG - Running function test_func
+2023-03-12 22:56:36,717 - DEBUG - Running function test_func
+2023-03-12 22:59:46,469 - DEBUG - Running function test_func from decorators
+2023-03-12 23:00:42,157 - DEBUG - Running function test_func from decorators
+2023-03-12 23:01:22,654 - DEBUG - Running function test_func from decorators
+2023-03-12 23:01:22,654 - ERROR - Exception raised in test_func. exception: can only concatenate str (not "int") to str
+2023-03-12 23:01:53,395 - DEBUG - Running function test_func from decorators
+2023-03-12 23:01:53,395 - ERROR - Exception raised in test_func. exception: can only concatenate str (not "int") to str
