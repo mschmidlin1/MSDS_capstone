@@ -1,0 +1,22 @@
+
+laplace transformations?
+
+
+Mid-term:
+Use RNN/LSTM/Transformers to predict stock prices and backtest
+ - Present in a way people who have never seen time series analysis can understand
+ - measurable results (max profit) compare to baseline
+
+
+
+Term project:
+ - Sentiment analysis
+ - Other market indicators? Disease?
+ - International communication? Oil prices?
+
+
+
+
+
+
+
