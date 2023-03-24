@@ -1,5 +1,8 @@
 secrets.py
 /capenv
+__pycache__
+__pycache__\
+__pycache__/
 __pycache__/
 capenv/
 data/

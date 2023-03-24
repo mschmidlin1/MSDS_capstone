@@ -8,12 +8,26 @@ from configs import set_logger
 set_logger()
 
 
-
+np.arange
 
 
 
 
 def scrape_news_website(website_url):
+    """
+    Scrapes a single news website for articles using the newspaper library. https://newspaper.readthedocs.io/en/latest/
+
+    Takes a single url for `website_url`.
+
+    Returns a `pd.DataFrame` with the following columns: 
+        `headline`: the title of the article
+        `publish_date`: the date the article was published
+        `content`: the text body of the article
+        `authors`: the authors of the article (in a list)
+        `keywords`: any keywords that the newspaper NLP found. if none, is set to `np.nan`
+        `summary`: the summary that the newspaper NLP created. if non, is set to `np.nan`
+    
+    """
     paper = newspaper.build(website_url)
     num_articles_found = len(paper.articles)
     #print("number found: ",num_articles_found)
@@ -53,6 +67,11 @@ def scrape_news_website(website_url):
     return df
 
 def extract_names(news_urls):
+    """
+    Takes a list of news URL's as input. This function attempts to extract the hostname of the website by using the "www." and the ".com" of a URL.
+
+    Returns a list of the extracted names.
+    """
     news_names = []
     for url in news_urls:
         if "www." in url:
@@ -64,7 +83,23 @@ def extract_names(news_urls):
 
 
 
-def scrape_websites(news_names, news_urls, save_file="data/news_data/news_data.pkl"):
+def scrape_websites(news_names: list, news_urls: list, save_file: str ="data/news_data/news_data.pkl"):
+    """
+    This function scrapes a list of news websites for articles. 
+    It then appends the data to the `save_file` data, deltes any duplicates, and saves the new DataFrame to the save file.
+
+    Parameters:
+    -----------
+    `news_names`: list of the names as returned by `News_Scraper.extract_names`
+    `news_urls`: list of news URL's
+    `save_file`: string, '.pkl' file to store the resulting DataFrame.
+
+    Returns:
+    --------
+    Nothing
+
+
+    """
 
     frames = []
 
@@ -91,10 +126,10 @@ def scrape_websites(news_names, news_urls, save_file="data/news_data/news_data.p
     df.to_pickle(save_file)
 
 def main():
-    from configs import news_urls
-    news_names = extract_names(news_urls)
-    lookup = {name: url for name, url in zip(news_names, news_urls)}
-    scrape_websites(news_names, news_urls, save_file="data/news_data/news_data.pkl")
+    from configs import NEWS_URLS, NEWS_SAVE_FILE
+    news_names = extract_names(NEWS_URLS)
+    lookup = {name: url for name, url in zip(news_names, NEWS_URLS)}
+    scrape_websites(news_names, NEWS_URLS, save_file=NEWS_SAVE_FILE)
 
 if __name__ == "__main__":
     main()

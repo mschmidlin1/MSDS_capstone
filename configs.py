@@ -10,7 +10,9 @@ TICKERS = {
     "AMD_TICKER": "AMD",
     }
 
-news_urls = [
+
+NEWS_SAVE_FILE = "data/news_data/news_data.pkl"
+NEWS_URLS = [
     "https://news.google.com/home?hl=en-US&gl=US&ceid=US:en",
     "https://www.cnn.com/",
     "https://www.nbcnews.com/",
