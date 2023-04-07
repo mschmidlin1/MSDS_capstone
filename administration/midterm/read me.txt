@@ -1,0 +1,12 @@
+Professor, 
+
+If you want to run any of the notebook, you will most likely need to make an account in order to have the proper API keys.
+
+Everything else you would need to run the code is provided.
+
+The the items imported from configs.py such as the logger are not needed so you can just delete those lines.
+
+In addition, you don't need anything from the ALGO_crossover file so you can delete that import.
+
+
+If all else fails I have included a pdf version of the notebook so running it should not be necessary.
