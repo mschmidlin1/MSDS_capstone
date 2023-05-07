@@ -8,7 +8,7 @@ from configs import set_logger
 set_logger()
 
 
-np.arange
+
 
 
 
